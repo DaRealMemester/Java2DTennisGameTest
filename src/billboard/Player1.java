@@ -105,6 +105,7 @@ public class Player1 extends Player {
         }
         else if (!served && ball.worldY <= 20) {
             ball.worldY = 20;
+            ball.hold();
             state = SERVICE;
         }
     }
